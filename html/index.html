@@ -1,77 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My profolio</title>
-</head>
-<body>
-   <header>
-      <nav>
-         <ul>
-            <li> <a href="#home">home</a></li>
-            <li> <a href="#about">about</a></li>
-            <li> <a href="#work">work</a></li>
-            <li> <a href="#resume">resume</a></li>
-            <li> <a href="#contact">contact</a></li>
-         </ul>
-      </nav>
-   </header>
-   <main>
-      <section id="about"> 
-         <H2>about</H2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse iste illo reprehenderit corporis perferendis. Repellat veniam nesciunt accusamus maxime unde laboriosam id eveniet fuga inventore officiis, qui officia quae, cupiditate fugit numquam vel. Quas excepturi porro dolorem quisquam molestias voluptates autem corporis neque dolore blanditiis, placeat perferendis maiores quae non in quia totam at rerum fugiat. Reiciendis dolorem laborum doloribus ipsum necessitatibus, delectus quos assumenda  magnam dolor vero enim eaque aperiam aliquam repellat accusantium. In aut expedita fugit. Debitis consequuntur fugiat laborum, possimus velit expedita, veritatis aliquam pariatur accusamus aut quo hic quas harum id corporis voluptatibus tempora quaerat?</p>
-         <img src="https://www.01net.com/app/uploads/2022/02/youtube-logo.jpg" alt="">
-         <img src="../assetes/YouTube_social_white_square_(2017).svg.png" alt="">
-      </section>
-      <section>
-         <H2>work</H2>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/HrTis9DBeck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </section>
-   </main>
-   <table border="1">
-      <tr>
-        <th>name</th>
-        <th>surname</th>
-        <th>phone number</th>
-      </tr>
-      <tr>
-        <td>roua</td>
-        <td>barhoumi</td>
-        <td>98400311</td>
-      </tr>
-      <tr>
-        <td>maryem</td>
-        <td>negra</td>
-        <td>99573310</td>
-      </tr>
-    </table>
-   <footer>
-      <section>
-         <H2>contact</H2>
-         <ol>
-            <li><a href="https://www.youtube.com/">youtube</a></li>
-         </ol>
-      </section>
-      <form>
-         <label>Name:</label>
-         <input type="text" name="first name" placeholder="type your name here" />
-         <br />
-   
-         <label>Number:</label>
-         <input type="number" name="name" value="98400311" />
-         <br />
-   
-         <label>Birth Date:</label>
-         <input type="date" name="birthday date" />
-         <br />
-
-         <label>message:</label>
-         <input type="message" name="type youe message" />
-         <br />
-   
-         <input type="submit" value="Submit" />
-       </form>
-   </footer>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <html>
+    <head>
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <h1>Shopping Cart</h1>
+        <div id="cart">
+            <div class="item">
+                <span class="item-name">Item 1</span>
+                <button class="quantity-btn" data-id="1">+</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn" data-id="1">-</button>
+                <button class="delete-btn" data-id="1">Delete</button>
+                <button class="like-btn" data-id="1">Like</button>
+            </div>
+            <div class="item">
+                <span class="item-name">Item 2</span>
+                <button class="quantity-btn" data-id="2">+</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn" data-id="2">-</button>
+                <button class="delete-btn" data-id="2">Delete</button>
+                <button class="like-btn" data-id="2">Like</button>
+            </div>
+        </div>
+        <div id="total">Total: $<span id="total-price">0.00</span></div>
+    
+        <script src="../java/main.js"></script>
 </body>
+
 </html>

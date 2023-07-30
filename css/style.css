@@ -1,0 +1,50 @@
+Negra Mariem
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#cart {
+    margin-top: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    flex-grow: 1;
+}
+
+.quantity-btn,
+.delete-btn,
+.like-btn {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0 5px;
+}
+
+.like-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.like-btn.red {
+    color: red;
+}
+
+#total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+}
